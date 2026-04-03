@@ -23,6 +23,7 @@ dependencies = [
 dev = [
     # REQ.DEV.DEPS: External packages used for linting, testing, type checking, etc.
     "bandit",
+    "deptry",
     "packaging",
     "pre-commit",
     "pytest",
@@ -43,6 +44,17 @@ docs = [
 
 [tool.bandit]
 skips = ["B105"] # WHY: tokens are not secrets in this project; they are the core data being modeled.
+
+# === DEPTRY (CHECK FOR UNDECLARED OR UNUSED DEPENDENCIES) ===
+
+[tool.deptry]
+# WHY: Dev and docs dependencies are not imported in source code.
+ignore = ["DEP002"]
+
+[tool.deptry.per_rule_ignores]
+# CUSTOM: Add self-import package here to avoid false positives.
+DEP001 = ["toy_gpt_train"]
+DEP003 = ["toy_gpt_train"]
 
 # === PYRIGHT (TYPE CHECKING HELPS FIND COMMON ERRORS BEFORE THE CODE RUNS) ===
 
