@@ -250,7 +250,7 @@ def main() -> None:
         expected_rows=v * v * v,
     )
 
-    args = parse_args()
+    args: argparse.Namespace = parse_args([])
 
     config: JsonObject = load_config()
     infer_config: JsonObject = (
