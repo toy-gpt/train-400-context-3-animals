@@ -51,7 +51,7 @@ See `SETUP.md` for full setup and workflow instructions.
 Run the full training script:
 
 ```shell
-uv run python src/toy_gpt_train/e_infer.py
+uv run python src/toy_gpt_train/d_train.py
 ```
 
 Run individual pipeline steps:

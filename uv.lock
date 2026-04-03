@@ -813,7 +813,7 @@ wheels = [
 ]
 
 [[package]]
-name = "toy-gpt-train"
+name = "train-400-context-3-animals"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
@@ -845,11 +845,11 @@ requires-dist = [
     { name = "bandit", marker = "extra == 'dev'" },
     { name = "datafun-toolkit" },
     { name = "deptry", marker = "extra == 'dev'" },
-    { name = "mike", marker = "extra == 'docs'", specifier = ">=2.1.3" },
-    { name = "mkdocs", marker = "extra == 'docs'", specifier = ">=1.6.1" },
-    { name = "mkdocs-material", marker = "extra == 'docs'", specifier = ">=9.7.1" },
-    { name = "mkdocs-static-i18n", marker = "extra == 'docs'", specifier = ">=1.3.0" },
-    { name = "mkdocstrings", extras = ["python"], marker = "extra == 'docs'", specifier = ">=1.0.1" },
+    { name = "mike", marker = "extra == 'docs'" },
+    { name = "mkdocs", marker = "extra == 'docs'" },
+    { name = "mkdocs-material", marker = "extra == 'docs'" },
+    { name = "mkdocs-static-i18n", marker = "extra == 'docs'" },
+    { name = "mkdocstrings", extras = ["python"], marker = "extra == 'docs'" },
     { name = "packaging", marker = "extra == 'dev'" },
     { name = "pre-commit", marker = "extra == 'dev'" },
     { name = "pyright", marker = "extra == 'dev'" },

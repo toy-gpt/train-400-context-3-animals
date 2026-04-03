@@ -18,9 +18,9 @@ Use the instructions above to get it ALL set up correctly.
 Most people open a terminal on their machine (not VS Code), open in their Repos folder and run:
 
 ```shell
-git clone https://github.com/YOURACCOUNT/toy-gpt-train
+git clone https://github.com/YOURACCOUNT/train-400-context-3-animals
 
-cd toy-gpt-train
+cd train-400-context-3-animals
 code .
 ```
 
@@ -37,15 +37,14 @@ uv sync --extra dev --extra docs --upgrade
 
 If asked: "We noticed a new environment has been created. Do you want to select it for the workspace folder?" Click **"Yes"**.
 
-Install and run pre-commit checks (repeat git `add` and `commit` twice as needed):
-
 ```shell
 uvx pre-commit install
 git add -A
 uvx pre-commit run --all-files
+# repeat if changes were made
+git add -A
+uvx pre-commit run --all-files
 ```
-
-
 
 ## 03: Daily Workflow (Working With Python Project Code)
 
@@ -109,9 +108,6 @@ git add -A
 git commit -m "update"
 git push -u origin main
 ```
-
-Follow the detailed instructions at:
-[**03. Daily Workflow**](https://denisecase.github.io/pro-analytics-02/03-daily-workflow/)
 
 ## Resources
 

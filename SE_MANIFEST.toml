@@ -14,7 +14,7 @@ purpose = "To make explicit the boundaries, responsibilities, and expectations o
 keywords_note = "Keywords live only in CITATION.cff (canonical)."
 
 [repo]
-name = "train-400-context-3"
+name = "train-400-context-3-animals"
 org = "toy-gpt"
 kind = "software"
 status = "academic"
@@ -28,10 +28,10 @@ architecture = "toy next-token model with fixed context window (3 tokens)"
 task = "next-token prediction"
 
 [observation]
-corpus_id = "000"
-corpus_name = "cat_dog"
+corpus_id = "001"
+corpus_name = "animals"
 corpus_path = "corpus/001_animals.txt"
-corpus_note = "Canonical context-3 baseline corpus for clean comparisons."
+corpus_note = "Deliberately minimal corpus to make the learning loop inspectable."
 
 [artifact]
 pretrained = true
