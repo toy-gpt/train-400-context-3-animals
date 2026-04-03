@@ -18,6 +18,7 @@ Notes:
   first 3-token context, we use (start, start, start) as the initial context.
 """
 
+import argparse
 import csv
 from dataclasses import dataclass
 import json
