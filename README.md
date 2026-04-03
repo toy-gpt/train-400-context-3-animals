@@ -1,4 +1,12 @@
-# toy-gpt-train
+# train-400-context-3-animals
+
+[![Docs](https://img.shields.io/badge/docs-live-blue)](https://toy-gpt.github.io/train-400-context-3-animals/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
+[![CI](https://github.com/toy-gpt/train-400-context-3-animals/actions/workflows/ci-python-mkdocs-shared.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-400-context-3-animals/actions/workflows/ci-python-mkdocs-shared.yml)
+[![Deploy-Docs](https://github.com/toy-gpt/train-400-context-3-animals/actions/workflows/deploy-mkdocs-shared.yml/badge.svg?branch=main)](https://github.com/toy-gpt/train-400-context-3-animals/actions/workflows/deploy-mkdocs-shared.yml)
+[![Check Links](https://github.com/toy-gpt/train-400-context-3-animals/actions/workflows/links.yml/badge.svg)](https://github.com/toy-gpt/train-400-context-3-animals/actions/workflows/links.yml)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/toy-gpt/train-400-context-3-animals/security)
+
 
 > Demonstrates, at very small scale, how a language model is trained.
 
@@ -64,16 +72,25 @@ uv run python src/toy_gpt_train/d_train.py
 uv run python src/toy_gpt_train/e_infer.py
 ```
 
-Build and serve documentation:
-
-```shell
-uv run mkdocs build --strict
-uv run mkdocs serve
-```
-
 ## Provenance and Purpose
 
 The primary corpus used for training is declared in `SE_MANIFEST.toml`.
 
 This repository commits pretrained artifacts so the client can run
 without retraining.
+
+## Annotations
+
+[ANNOTATIONS.md](./ANNOTATIONS.md) - REQ/WHY/OBS annotations used
+
+## Citation
+
+[CITATION.cff](./CITATION.cff)
+
+## License
+
+[MIT](./LICENSE)
+
+## SE Manifest
+
+[SE_MANIFEST.toml](./SE_MANIFEST.toml) - project intent, scope, and role
